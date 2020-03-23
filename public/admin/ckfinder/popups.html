@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+	<textarea name="content" id="content" cols="30" rows="10"></textarea>
+	<div style="height: 5px"></div>
+	
+	<input id="ckfinder-input-1" type="text" style="width:60%">
+	<button id="ckfinder-popup-1">Browse Server</button>
+	<div id="output"></div>
+<script src="ckfinder.js"></script>
+<script src="../ckeditor/ckeditor.js"></script>
+<script>
+	/*var button = document.getElementById('ckfinder-popup-1');
+	console.log(button);
+	button.onclick = function() {
+
+		CKFinder.popup( {
+			chooseFiles: true,
+			width: 800,
+			height: 600,
+			onInit: function( finder ) {
+				finder.on( 'files:choose', function( evt ) {
+					var file = evt.data.files.first();
+					var output = document.getElementById( 'output' );
+					output.innerHTML = 'Selected: ' + escapeHtml( file.get( 'name' ) ) + '<br>URL: ' + escapeHtml( file.getUrl() );
+				} );
+
+				finder.on( 'file:choose:resizedImage', function( evt ) {
+					var output = document.getElementById( 'output' );
+					output.innerHTML = 'Selected resized image: ' + escapeHtml( evt.data.file.get( 'name' ) ) + '<br>url: ' + escapeHtml( evt.data.resizedUrl );
+				} );
+			}
+		} );
+	};*/
+
+	var button1 = document.getElementById( 'ckfinder-popup-1' );
+	button1.onclick = function() {
+		selectFileWithCKFinder( 'ckfinder-input-1' );
+	};
+
+	function selectFileWithCKFinder( elementId ) {
+		CKFinder.popup( {
+			chooseFiles: true,
+			width: 800,
+			height: 600,
+			onInit: function( finder ) {
+				finder.on( 'files:choose', function( evt ) {
+					var file = evt.data.files.first();
+					var output = document.getElementById( elementId );
+					output.value = file.getUrl();
+				} );
+
+				finder.on( 'file:choose:resizedImage', function( evt ) {
+					var output = document.getElementById( elementId );
+					output.value = evt.data.resizedUrl;
+				} );
+			}
+		} );
+	}
+
+	CKEDITOR.replace( 'content',
+	 {
+	     filebrowserBrowseUrl: '/ckfinder/ckfinder.html',
+	     filebrowserImageBrowseUrl: '/ckfinder/ckfinder.html?type=Images',
+	     filebrowserUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+	     filebrowserImageUploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+	 });
+	CKEDITOR.replace('content');
+</script>
+</body>
+</html>

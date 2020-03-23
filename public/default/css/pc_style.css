@@ -1,0 +1,322 @@
+.footer{
+	background-image: url('../images/pc/bg_footer.jpg');
+}
+a{
+  text-decoration: none;
+  transition: 0.4s;
+}
+a:hover{
+  text-decoration: none;
+  transition: 0.4s;
+}
+/*phần bên phải right*/
+#noidung_duoi {
+    color: red;
+    font-size: 17px;
+    font-weight: bold;
+}
+/*kết thúc phần bên phải right*/
+/*chuyên mục bài viết*/
+._1baiviet {
+    padding: 25px 0px;
+    border-bottom: 1px dotted gray;
+}
+/*kết thúc chuyên mục bài viết*/
+/*sroll top*/
+.messeger_icon {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 9999;
+}
+.messeger {
+    position: absolute;
+    right: 10px;
+    bottom: 160px;
+    padding: 2px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    border-radius: 50%;
+}
+/*end messeger*/
+/*sroll top*/
+.scrolltop {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 9999;
+}
+.scroll {
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+    background: #b2b2b2;
+    background-color: #71adb8;
+    padding: 2px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    border-radius: 50%;
+}
+/*end scroll top*/
+/*bài viết*/
+.post_title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0.3rem;
+    color: #096089;
+    font-size: 24px;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.keyword {
+    border: 1px solid #95a5a6;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline-block;
+}
+#post_bg_form_regis {
+    background-color: #096089;
+    height: auto;
+}
+/*kết thúc bài viết*/
+/*bài viết liên quan*/
+.title_thongtinbaiviet {
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 6px solid #fff;
+}
+.title_tintuclienquan {
+    color: #096089;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 0;
+}
+.title_thongtintieude {
+    padding-left: 10px;
+    color: #2e3031;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.title_thongtinbaiviet a{
+    text-decoration: none;
+}
+.style_line_tinlienquan {
+    border-bottom: 3px solid #aeaeae;
+    color: #18191a;
+    text-transform: uppercase;
+    height: 42px;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+}
+.style_line_tinlienquan::before {
+    position: absolute;
+    bottom: -3px;
+    border-bottom: 5px solid #096089;
+    content: '';
+    display: block;
+    width: 220px;
+}
+/*kết thúc bài viết liên quan*/
+.content_right{
+  top:60px;
+  z-index: 1;
+}
+.postsale{
+  background: #2d7b9c;
+}
+.postsale h6{
+  text-align: center;
+  padding:5px 0px;
+}
+.uudaiTitle,.chamsockhachhang{
+  background: #2d7b9c;
+  color: white;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/*top*/
+.top{
+  height: 130px;
+  line-height: 130px;
+}
+.icon_top1{
+  position: absolute;
+  height: 70%;
+  left: 44%;
+  z-index: 2;
+}
+.icon_top1 a{
+  text-decoration: none;
+  padding: 0px 15px;
+}
+.icon_top2{
+  position: absolute;
+  left: 30%;
+  top:30%;
+  z-index: 1;
+}
+.icon_top2 a {
+    padding: 0px 15px;
+    font-size: 13px;
+    text-decoration: none;
+}
+/*liên hệ*/
+#lienhe_bg_dk {
+    background-color: #d4eff4;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #b3dde5;
+    height: 365px;
+}
+#lienhe_tieude{
+    color: #535250;
+    font-size: 26px;
+    font-weight: 700;
+}
+#lienhe_margin {
+    top: 0;
+    right: 5%;
+    left: 5%;
+}
+/*kết thúc liên hệ*/
+/*khách hàng*/
+.khachhang.col-md-2{
+  position: relative;width: 190px; height: 175px;
+  padding-left: 0px;
+}
+.khachhang .sau:hover{
+  opacity: 0;
+  transition: 1s;
+}
+.sau{
+  transition: 1s;
+  opacity: 1;position: absolute;
+}
+.truoc{
+  position: absolute;
+}
+/*end khách hàng*/
+
+/*thanh cuộn*/
+.scrolltop {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 9999;
+}
+.scroll {
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+    background: #b2b2b2;
+    background-color: #71adb8;
+    padding: 2px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    border-radius: 50%;
+}
+/*kết thúc thanh cuộn lên top*/
+
+
+
+
+/*menu*/
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+   margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+  border:none;
+  background-color:#0060c8!important;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+  padding:.5rem .5rem;
+  margin:0 .25rem;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+  width:100%;
+  left:0;
+  right:0;
+/*  height of nav-item  */
+  top:53px;
+  
+  display:block;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  
+}
+  /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  display:block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+  
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+  }
+
+}
+/*phần viết thêm*/
+.nav-item .nav-link:hover{
+  background-color: #2980b9e6;
+}
+ul.nav.flex-column li.nav-item {
+    border-bottom: 1px dotted #fff;
+}
+.navbar{
+  background-color: #0e4d6b!important;height: 56px;
+}
+/*end menu*/
